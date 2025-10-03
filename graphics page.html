@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Ayotunde Ogunduyile | Graphics Designer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #ffffff;
+            color: #222;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Floating Gradient Blobs */
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.35;
+            filter: blur(70px);
+            animation: float 12s infinite ease-in-out alternate;
+            z-index: -2;
+        }
+
+        .blob1 {
+            width: 300px; height: 300px;
+            top: -80px; left: -100px;
+            background: radial-gradient(circle at center, #ff6bcb, #ff2e93);
+        }
+
+        .blob2 {
+            width: 350px; height: 350px;
+            bottom: -120px; right: -100px;
+            background: radial-gradient(circle at center, #54a0ff, #2e86de);
+            animation-delay: 3s;
+        }
+
+        .blob3 {
+            width: 200px; height: 200px;
+            top: 40%; left: 70%;
+            background: radial-gradient(circle at center, #feca57, #ff9f43);
+            animation-delay: 6s;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px) translateX(0px) scale(1); }
+            50% { transform: translateY(-30px) translateX(20px) scale(1.1); }
+            100% { transform: translateY(0px) translateX(-20px) scale(1); }
+        }
+
+        /* Extra Moving Shapes */
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.25);
+            animation: moveShape 18s infinite linear;
+            z-index: -1;
+        }
+
+        .shape1 { width: 40px; height: 40px; top: 10%; left: 20%; animation-delay: 0s; }
+        .shape2 { width: 25px; height: 25px; top: 40%; left: 70%; animation-delay: 5s; }
+        .shape3 { width: 35px; height: 35px; top: 70%; left: 10%; animation-delay: 10s; }
+
+        @keyframes moveShape {
+            0% { transform: translateY(0) translateX(0) rotate(0deg); opacity:0.4; }
+            50% { transform: translateY(-60px) translateX(30px) rotate(180deg); opacity:0.8; }
+            100% { transform: translateY(0) translateX(0) rotate(360deg); opacity:0.4; }
+        }
+
+        /* Hero Section */
+        #banner {
+            position: relative;
+            text-align: center;
+            padding: 10px 20px 20px;
+            z-index: 1;
+        }
+
+        #banner h1 {
+            font-size: 3em;
+            font-weight: 800;
+            color: #111;
+            margin-bottom: 15px;
+        }
+
+        #banner p {
+            font-size: 1.2em;
+            color: #444;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        /* Profile Wrapper */
+        .profile-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        /* Rotating Ring Behind Image */
+        .rotating-ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 330px;
+            height: 330px;
+            border-radius: 50%;
+            background: conic-gradient(#ff6bcb, #54a0ff, #feca57, #ff2e93, #2e86de);
+            animation: spin 15s linear infinite;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            filter: blur(3px);
+        }
+
+        /* Main Profile Image - Perfect Circle */
+        .profile-wrapper img {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid #fff;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            position: relative;
+            z-index: 2;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .profile-wrapper img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+        }
+
+        /* Spin Animation */
+        @keyframes spin {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        /* Center Buttons */
+        .btn-group {
+            margin-top: 25px;
+            margin-bottom: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 14px 28px;
+            font-weight: 600;
+            font-size: 1em;
+            border-radius: 30px;
+            text-decoration: none;
+            background: linear-gradient(135deg, #ff6bcb, #ff2e93);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+
+        .btn-alt {
+            background: linear-gradient(135deg, #54a0ff, #2e86de);
+        }
+
+        /* Contact Section */
+        #contact {
+            text-align: center;
+            padding: 50px 20px;
+            z-index: 1;
+            position: relative;
+        }
+
+        #contact h2 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+        }
+
+        #contact p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        .icons a {
+            margin: 0 12px;
+            font-size: 1.1em;
+            text-decoration: none;
+            font-weight: 600;
+            color: #222;
+            padding: 10px 16px;
+            border-radius: 25px;
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .icons a:hover {
+            background: #ff6bcb;
+            color: #fff;
+        }
+
+        /* Footer */
+        #footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9em;
+            color: #777;
+            background: #f7f7f7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Moving Background Blobs -->
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+
+    <!-- Extra Floating Shapes -->
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+
+    <!-- Hero Section -->
+    <section id="banner">
+        <h1>Ogunduyile Ayotunde Kelvin</h1>
+        <p>A passionate <strong>Graphics Designer & Digital Marketing Creative</strong> focused on creating bold, modern and timeless visual designs. 
+        From branding and digital art to creative layouts, I transform ideas into striking visuals that connect with people</p>
+
+        <!-- Profile Image with Rotating Ring -->
+        <div class="profile-wrapper">
+            <div class="rotating-ring"></div>
+            <img src="images/profile.png" alt="Profile Picture" />
+        </div>
+
+        <!-- Buttons in the middle -->
+        <div class="btn-group">
+            <a href="https://www.instagram.com/ayoscix/" class="btn">Instagram 1</a>
+            <a href="https://www.instagram.com/yourpage2" class="btn btn-alt">Instagram 2</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Let’s Create Something Amazing</h2>
+        <p>Available for freelance design projects, collaborations and creative partnerships</p>
+        <div class="icons">
+            <a href="mailto:ayotundekelvinogunduyile@gmail.com">Email</a>
+            <a href="https://api.whatsapp.com/send?phone=2347063080960">WhatsApp</a>
+            <a href="https://www.linkedin.com/in/ayotunde-ogunduyile-405a1a279/">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>Designed by Ayotunde Ogunduyile</p>
+        <p>© 2025 All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
