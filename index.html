@@ -256,7 +256,7 @@
       <div class="profile" role="img" aria-label="Profile picture of Ayotunde Ogunduyile">
         <div class="ring" aria-hidden="true"></div>
         <div class="avatar" aria-hidden="false">
-          <img src="images/profile.jpg" alt="Ayotunde Ogunduyile" id="profile-img" loading="eager" />
+          <img src="images/profile 3.png" alt="Ayotunde Ogunduyile" id="profile-img" loading="eager" />
         </div>
         <div style="text-align:center;margin-top:12px">
           <div style="font-weight:700;color:var(--muted);font-size:13px">Brand & Digital Creative</div>
@@ -282,9 +282,7 @@
             Email
           </a>
 
-          <a class="btn btn-whatsapp" href="https://api.whatsapp.com/send?phone=2347063080960" target="_blank" rel="noopener noreferrer">
-            WhatsApp
-          </a>
+          
 
         </div>
 
@@ -310,48 +308,102 @@
         </div>
         <div class="service">
           <h3>Product & Mockups</h3>
-          <p>Realistic product mockups and layout compositions for marketing or e-commerce listings.</p>
+          <p>Realistic product mockups and layout compositions for marketing or ecommerce listings.</p>
         </div>
       </div>
     </section>
 
+
+
 <!-- PORTFOLIO SECTION -->
 <section class="section" aria-labelledby="portfolio-title">
-  <h2 id="portfolio-title">Portfolio</h2>
+  <h2 id="portfolio-title">Visual Projects</h2>
   <div class="gallery-grid" id="gallery">
 
     <!-- Portfolio Cards -->
-    <div class="card" data-full="images/pic.jpg" tabindex="0">
+    <div class="card">
       <img src="images/pic.jpg" alt="Project 1 — Branding" loading="lazy" />
     </div>
 
-    <div class="card" data-full="images/pic (2).jpg" tabindex="0">
+    <div class="card">
       <img src="images/pic (2).jpg" alt="Project 2 — Social Campaign" loading="lazy" />
     </div>
 
-    <div class="card" data-full="images/pic (3).jpg" tabindex="0">
+    <div class="card">
       <img src="images/pic (3).jpg" alt="Project 3 — Poster Design" loading="lazy" />
     </div>
 
-    <div class="card" data-full="images/pic (4).jpg" tabindex="0">
+    <div class="card">
       <img src="images/pic (4).jpg" alt="Project 4 — Packaging" loading="lazy" />
     </div>
 
-    <div class="card" data-full="images/pic (5).jpg" tabindex="0">
+    <div class="card">
       <img src="images/pic (5).jpg" alt="Project 5 — Digital Art" loading="lazy" />
     </div>
 
-    <div class="card" data-full="images/pic(6).jpg" tabindex="0">
-      <img src="images/pic(6).jpg" alt="Project 6 — Mockup" loading="lazy" />
+    <div class="card">
+      <img src="images/pic(6).jpg" alt="Project 5 — Digital Art" loading="lazy" />
     </div>
+
   </div>
 </section>
 
-<!-- LIGHTBOX -->
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img" alt="Expanded project image" />
-</div>
+<!-- PORTFOLIO SECTION -->
+<section class="section" aria-labelledby="portfolio-title">
+  <h2 id="portfolio-title">Carousel</h2>
+  <div class="gallery-grid" id="gallery">
+
+    <!-- Portfolio Cards -->
+    <div class="card">
+      <img src="images/Carousel 1.png" alt="Project 1 — Branding" loading="lazy" />
+    </div>
+
+    <div class="card">
+      <img src="images/Carousel 2.png" alt="Project 2 — Social Campaign" loading="lazy" />
+    </div>
+
+    <div class="card">
+      <img src="images/Carousel 3.png" alt="Project 3 — Poster Design" loading="lazy" />
+    </div>
+
+    <div class="card">
+      <img src="images/Carousel 4.png" alt="Project 4 — Packaging" loading="lazy" />
+    </div>
+
+    <div class="card">
+      <img src="images/Carousel 5.png" alt="Project 5 — Digital Art" loading="lazy" />
+    </div>
+
+  </div>
+</section>
+
+<<!-- PORTFOLIO SECTION -->
+<section class="section" aria-labelledby="portfolio-title">
+  <h2 id="portfolio-title">Motion Graphics</h2>
+  <div class="gallery-grid" id="gallery">
+
+    <!-- Portfolio Cards -->
+    <div class="card">
+      <video src="images/motion 4.mp4" controls autoplay loop muted playsinline style="width:100%; height:100%; object-fit:cover;"></video>
+    </div>
+
+    <div class="card">
+      <video src="images/Motion 3.mp4" controls autoplay loop muted playsinline style="width:100%; height:100%; object-fit:cover;"></video>
+    </div>
+
+    <div class="card">
+      <video src="images/motion 2.mp4" controls autoplay loop muted playsinline style="width:100%; height:100%; object-fit:cover;"></video>
+    </div>
+
+    <div class="card">
+      <video src="images/motion 1.mp4" controls autoplay loop muted playsinline style="width:100%; height:100%; object-fit:cover;"></video>
+    </div>
+
+  
+
+  </div>
+</section>
+
 
 <style>
   /* Portfolio Section */
@@ -379,7 +431,7 @@
     overflow: hidden;
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    cursor: pointer;
+    /* cursor removed so it doesn’t look clickable */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: #fff;
   }
@@ -399,82 +451,7 @@
   .card:hover img {
     transform: scale(1.05);
   }
-
-  /* Lightbox */
-  .lightbox {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background-color: transparent; /* removed black background */
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-  }
-
-  .lightbox-content {
-    max-width: 90%;
-    max-height: 85vh;
-    width: auto;
-    height: auto;
-    border-radius: 12px;
-    object-fit: contain;
-    background: #fff;
-    padding: 8px;
-    box-shadow: 0 0 40px rgba(0,0,0,0.15);
-    animation: zoomIn 0.3s ease;
-  }
-
-  @keyframes zoomIn {
-    from { transform: scale(0.85); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-  }
-
-  .close {
-    position: absolute;
-    top: 25px;
-    right: 40px;
-    color: #333;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    z-index: 1001;
-  }
-
-  .close:hover {
-    color: #ff6bcb;
-  }
 </style>
-
-<script>
-  // Lightbox script
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const closeBtn = document.querySelector(".close");
-
-  document.querySelectorAll(".card").forEach(card => {
-    card.addEventListener("click", () => {
-      const fullImg = card.getAttribute("data-full");
-      lightboxImg.src = fullImg;
-      lightbox.style.display = "flex";
-      document.body.style.overflow = "hidden"; // disable scroll
-    });
-  });
-
-  closeBtn.addEventListener("click", () => {
-    lightbox.style.display = "none";
-    document.body.style.overflow = "auto";
-  });
-
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) {
-      lightbox.style.display = "none";
-      document.body.style.overflow = "auto";
-    }
-  });
-</script>
-
 
 
     <!-- TESTIMONIALS -->
@@ -501,12 +478,12 @@
   <h2 id="contact-title">Contact</h2>
 
   <p style="color:var(--muted);margin:0 0 12px">
-    Email or message me on WhatsApp for project inquiries, quotes or collaborations.
+    Email for project inquiries, quotes or collaborations.
   </p>
 
   <div class="contact-row" style="margin-top:12px; display:flex; gap:14px; flex-wrap:wrap; justify-content:center;">
     <a href="mailto:ayotundekelvinogunduyile@gmail.com">Email</a>
-    <a href="https://api.whatsapp.com/send?phone=2347063080960" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    
   
   </div>
 </section>
@@ -519,12 +496,7 @@
 
   </main>
 
-  <!-- lightbox -->
-  <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true" aria-label="Image preview">
-    <div class="inner" role="document">
-      <img id="lightbox-img" src="" alt="" />
-    </div>
-  </div>
+
 
   <script>
     // quick image preload for profile (so avatar appears fast)
@@ -596,3 +568,5 @@
 </body>
 </html>
 
+
+the lead is a favrourable Owner
