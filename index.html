@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
   <style>
+
+
     :root{
       --bg:#ffffff;
       --text:#111;
@@ -204,6 +206,8 @@
     }
     .tool img{width:100%;height:100%;object-fit:contain;display:block}
 
+    
+
     /* initial tool positions (they move via CSS animations) */
     .tool.ps { left:12%; top:8%; animation:toolMove1 18s ease-in-out infinite; }
     .tool.ai { right:10%; top:20%; animation:toolMove2 20s ease-in-out infinite; }
@@ -234,19 +238,19 @@
 
   <!-- Floating tool icons (replace images with your own small PNG/SVG files) -->
   <div class="tool ps" aria-hidden="true">
-    <img src="images/idea (1).png" alt="Photoshop icon" />
+    <img src="images/After Effects.jpg" alt="Photoshop icon" />
   </div>
 
   <div class="tool ai" aria-hidden="true">
-    <img src="images/laptop.png" alt="Illustrator icon" />
+    <img src="images/Figma.jpg" alt="Illustrator icon" />
   </div>
 
   <div class="tool figma" aria-hidden="true">
-    <img src="images/loupe (1).png" alt="Figma icon" />
+    <img src="images/Photoshop.jpg" alt="Figma icon" />
   </div>
 
   <div class="tool canva" aria-hidden="true">
-    <img src="images/paintbrush.png" alt="Canva icon" />
+    <img src="images/illustrator.jpg" alt="Canva icon" />
   </div>
 
   <main>
@@ -265,29 +269,78 @@
 
       <div class="hero-info">
         <h1 id="hero-title">Ogunduyile Ayotunde Kelvin</h1>
-        <p class="lead">I design bold modern visual identities, social media graphics and marketing campaigns that connect with people. I help businesses and creators stand out with strong branding and engaging creative content</p>
+        <p class="lead">I design bold, modern visual identities that help brands and creators stand out. From social media graphics to marketing campaigns, I create work that captures attention and communicates clearly.</p>
 
         <div class="cta" role="group" aria-label="Primary contact links">
-         <a class="btn btn-instagram" href="https://www.instagram.com/ayoscixglobal/" target="_blank" rel="noopener noreferrer">
-  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white" style="vertical-align:middle;margin-right:6px">
-    <path d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.415a4.92 4.92 0 0 1 1.77 1.03 4.92 4.92 0 0 1 1.03 1.77c.175.46.36 1.26.415 2.43.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.415 2.43a4.92 4.92 0 0 1-1.03 1.77 4.92 4.92 0 0 1-1.77 1.03c-.46.175-1.26.36-2.43.415-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.415a4.92 4.92 0 0 1-1.77-1.03 4.92 4.92 0 0 1-1.03-1.77c-.175-.46-.36-1.26-.415-2.43C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.85c.054-1.17.24-1.97.415-2.43a4.92 4.92 0 0 1 1.03-1.77 4.92 4.92 0 0 1 1.77-1.03c.46-.175 1.26-.36 2.43-.415C8.416 2.212 8.8 2.2 12 2.2zm0-2.2C8.736 0 8.332.012 7.052.07 5.77.128 4.768.33 4.012.63a7.09 7.09 0 0 0-2.56 1.66A7.09 7.09 0 0 0 .63 4.012C.33 4.768.128 5.77.07 7.052.012 8.332 0 8.736 0 12s.012 3.668.07 4.948c.058 1.282.26 2.284.56 3.04a7.09 7.09 0 0 0 1.66 2.56 7.09 7.09 0 0 0 2.56 1.66c.756.3 1.758.502 3.04.56C8.332 23.988 8.736 24 12 24s3.668-.012 4.948-.07c1.282-.058 2.284-.26 3.04-.56a7.09 7.09 0 0 0 2.56-1.66 7.09 7.09 0 0 0 1.66-2.56c.3-.756.502-1.758.56-3.04C23.988 15.668 24 15.264 24 12s-.012-3.668-.07-4.948c-.058-1.282-.26-2.284-.56-3.04a7.09 7.09 0 0 0-1.66-2.56A7.09 7.09 0 0 0 19.988.63c-.756-.3-1.758-.502-3.04-.56C15.668.012 15.264 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.762a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/>
-  </svg>
-  Instagram
-</a>
+        <style>
+  /* Instagram button ONLY glow effect */
+  .btn-instagram {
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn-instagram::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(
+      90deg,
+      red,
+      orange,
+      yellow,
+      green,
+      cyan,
+      blue,
+      violet,
+      red
+    );
+    background-size: 400%;
+    border-radius: inherit;
+    animation: moveBorder 6s linear infinite;
+    z-index: -1;
+  }
+
+  @keyframes moveBorder {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+</style>
+
+<div class="cta" role="group" aria-label="Primary contact links">
+
+  <a class="btn btn-instagram" href="https://www.instagram.com/ayoscixglobal/" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white" style="vertical-align:middle;margin-right:6px">
+      <path d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.054 1.97.24 2.43.415a4.92 4.92 0 0 1 1.77 1.03 4.92 4.92 0 0 1 1.03 1.77c.175.46.36 1.26.415 2.43.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.415 2.43a4.92 4.92 0 0 1-1.03 1.77 4.92 4.92 0 0 1-1.77 1.03c-.46.175-1.26.36-2.43.415-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.43-.415a4.92 4.92 0 0 1-1.77-1.03 4.92 4.92 0 0 1-1.03-1.77c-.175-.46-.36-1.26-.415-2.43C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.85c.054-1.17.24-1.97.415-2.43a4.92 4.92 0 0 1 1.03-1.77 4.92 4.92 0 0 1 1.77-1.03c.46-.175 1.26-.36 2.43-.415C8.416 2.212 8.8 2.2 12 2.2zm0-2.2C8.736 0 8.332.012 7.052.07 5.77.128 4.768.33 4.012.63a7.09 7.09 0 0 0-2.56 1.66A7.09 7.09 0 0 0 .63 4.012C.33 4.768.128 5.77.07 7.052.012 8.332 0 8.736 0 12s.012 3.668.07 4.948c.058 1.282.26 2.284.56 3.04a7.09 7.09 0 0 0 1.66 2.56 7.09 7.09 0 0 0 2.56 1.66c.756.3 1.758.502 3.04.56C8.332 23.988 8.736 24 12 24s3.668-.012 4.948-.07c1.282-.058 2.284-.26 3.04-.56a7.09 7.09 0 0 0 2.56-1.66 7.09 7.09 0 0 0 1.66-2.56c.3-.756.502-1.758.56-3.04C23.988 15.668 24 15.264 24 12s-.012-3.668-.07-4.948c-.058-1.282-.26-2.284-.56-3.04a7.09 7.09 0 0 0-1.66-2.56A7.09 7.09 0 0 0 19.988.63c-.756-.3-1.758-.502-3.04-.56C15.668.012 15.264 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.762a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/>
+    </svg>
+    Instagram
+  </a>
+
+  <a class="btn btn-mail" href="mailto:ayotundekelvinogunduyile@gmail.com">
+    Email
+  </a>
+
+</div>
 
 
 
-          <a class="btn btn-mail" href="mailto:ayotundekelvinogunduyile@gmail.com" target="_blank" rel="noopener noreferrer">
-            Email
-          </a>
-
+        
           
 
         </div>
 
         <!-- quick services preview -->
-        <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;">
-          <span style="font-size:13px;color:var(--muted)">Available for: Branding • Social Graphics • Digital Marketing Campaigns • Mockups</span>
+<div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;">
+  <span style="font-size:13px;color:var(--muted)">
+    <strong>Tools:</strong> Figma • Photoshop • Illustrator • After Effects • Canva
+  </span>
+</div>
         </div>
       </div>
     </section>
@@ -397,11 +450,10 @@
     <div class="card">
       <video src="images/motion 1.mp4" controls autoplay loop muted playsinline style="width:100%; height:100%; object-fit:cover;"></video>
     </div>
-
-     <div class="card">
+    
+    <div class="card">
       <video src="images/Motion 5.mp4" controls autoplay loop muted playsinline style="width:100%; height:100%; object-fit:cover;"></video>
     </div>
-
   
 
   </div>
@@ -477,23 +529,160 @@
     </section>
 
    <!-- CONTACT -->
+<style>
+  .highlight {
+    color: red;
+  }
+</style>
+
+<style>
+  .email-btn {
+    position: relative;
+    display: inline-block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #111;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  /* animated border */
+  .email-btn::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: linear-gradient(
+      90deg,
+      red,
+      orange,
+      yellow,
+      green,
+      cyan,
+      blue,
+      violet,
+      red
+    );
+    background-size: 400%;
+    border-radius: 12px;
+    animation: moveBorder 6s linear infinite;
+  }
+
+  /* inner cover so only border shows */
+  .email-btn::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #111;
+    border-radius: 8px;
+    z-index: -1;
+  }
+
+  @keyframes moveBorder {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+
+  .email-btn:hover {
+    transform: scale(1.03);
+    transition: 0.2s ease;
+  }
+</style>
+
+<style>
+  .email-btn {
+    position: relative;
+    display: inline-block;
+    padding: 12px 20px;
+    color: #111;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #fff;
+    z-index: 1;
+    overflow: hidden;
+    font-weight: 500;
+  }
+
+  /* animated border */
+  .email-btn::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: linear-gradient(
+      90deg,
+      red,
+      orange,
+      yellow,
+      green,
+      cyan,
+      blue,
+      violet,
+      red
+    );
+    background-size: 400%;
+    border-radius: 12px;
+    animation: moveBorder 6s linear infinite;
+  }
+
+  /* inner white layer */
+  .email-btn::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #fff;
+    border-radius: 8px;
+    z-index: -1;
+  }
+
+  @keyframes moveBorder {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+
+  .email-btn:hover {
+    transform: scale(1.03);
+    transition: 0.2s ease;
+  }
+</style>
+
+<!-- CONTACT -->
 <section class="section" aria-labelledby="contact-title">
-  <h2 id="contact-title">Contact</h2>
+  <h2 id="contact-title">
+    Want a brand that feels confident? 
+    <span class="highlight">Let’s talk.</span>
+  </h2>
 
   <p style="color:var(--muted);margin:0 0 12px">
-    Email for project inquiries, quotes or collaborations.
+    Tell me about your project and I’ll create visuals that make your brand stand out
   </p>
 
   <div class="contact-row" style="margin-top:12px; display:flex; gap:14px; flex-wrap:wrap; justify-content:center;">
-    <a href="mailto:ayotundekelvinogunduyile@gmail.com">Email</a>
-    
-  
+    <a class="email-btn" href="mailto:ayotundekelvinogunduyile@gmail.com?subject=Project%20Inquiry">
+      Send a message
+    </a>
   </div>
 </section>
 
 
     <footer>
-      <div>© 2025 Ayotunde Ogunduyile · Designed & coded by Ayotunde</div>
+      <div>© 2025 Ayotunde Ogunduyile · All rights reserved</div>
       <div style="margin-top:8px"><a href="https://www.linkedin.com/in/ayotunde-ogunduyile-405a1a279/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">LinkedIn</a></div>
     </footer>
 
@@ -572,4 +761,3 @@
 </html>
 
 
-the lead is a favrourable Owner
